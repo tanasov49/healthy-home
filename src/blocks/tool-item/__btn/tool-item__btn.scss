@@ -1,0 +1,6 @@
+.tool-item__btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    @include linkPage;
+}

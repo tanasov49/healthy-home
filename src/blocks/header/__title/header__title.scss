@@ -1,0 +1,6 @@
+.header__title {
+    margin: 0;
+    @include header__title;
+    max-width: 410px;
+    padding: 69px 0 0 42px;
+}
