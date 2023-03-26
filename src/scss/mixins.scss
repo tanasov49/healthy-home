@@ -9,6 +9,19 @@
         color: #dfc345;
     }
 }
+// Анимация текста
+@mixin animateText {
+    animation: animateText 5s;
+    transform: translateX(0);
+    @keyframes animateText {
+        0% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
 @mixin header__title {
     font-weight: 400;
     font-size: 63px;
@@ -65,4 +78,48 @@
     line-height: 14px;
     text-transform: uppercase;
     color: #3C3C3C;
+}
+@mixin section-colors__subtitle {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+}
+@mixin section-colors__text {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1F1E1E;
+}
+@mixin description-text__title_indoor {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 58px;
+    color: #425E44;
+}
+@mixin description-text__title_sticker {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 50px;
+    color: #1F1E1E;
+}
+@mixin description-text__subtitle {
+    font-size: 9px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #425E44;
+}
+@mixin section-descriptions__title {
+    font-weight: 400;
+    font-size: 192px;
+    line-height: 201px;
+    color: #1F1E1E;
+}
+@mixin section-descriptions__subtitle {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    color: #1F1E1E;
 }

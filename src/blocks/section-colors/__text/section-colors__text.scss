@@ -1,0 +1,8 @@
+.section-colors__text {
+    @include section-colors__text;
+    margin: 16px auto 0;
+    text-align: center;
+    max-width: 681px;
+    display: flex;
+    justify-content: center;
+}
