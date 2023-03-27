@@ -1,0 +1,5 @@
+.description-text__link {
+    @include description-text__link;
+    margin: 25px 0 0 0;
+    @include animateText;
+}

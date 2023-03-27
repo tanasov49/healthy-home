@@ -20,3 +20,17 @@ export const colors = [
     {src: Color9, title: 'Sidi Ali — N°3000', price: '€39/1L'},
     {src: Color10, title: 'Dakhla — N°2555', price: '€39/1L'}
 ]
+import Room1 from '../images/rooms-colors/room-1.jpg';
+import colorRoom1 from '../images/rooms-colors/room-1_color.png';
+import Room2 from '../images/rooms-colors/room-2.jpg';
+import colorRoom2 from '../images/rooms-colors/room-2_color.png';
+import Room3 from '../images/rooms-colors/room-3.jpg';
+import colorRoom3 from '../images/rooms-colors/room-3_color.png';
+import Room4 from '../images/rooms-colors/room-4.jpg';
+import colorRoom4 from '../images/rooms-colors/room-4_color.png';
+export const roomColors = [
+    {room: Room1, color: colorRoom1, altRoom: 'room1', altColor: 'color1', href: "#"},
+    {room: Room2, color: colorRoom2, altRoom: 'room2', altColor: 'color2', href: "#"},
+    {room: Room3, color: colorRoom3, altRoom: 'room3', altColor: 'color3', href: "#"},
+    {room: Room4, color: colorRoom4, altRoom: 'room4', altColor: 'color4', href: "#"}
+]

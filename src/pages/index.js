@@ -1,6 +1,6 @@
 import './index.scss';
 import { linksNavPages, toolsNavPage, advantagesColors } from '../data/data';
-import { colors } from '../data/colors';
+import { colors, roomColors } from '../data/colors';
 import $ from "jquery";
 // Перебор данных для nav
 $.map(linksNavPages, (item) => {
@@ -16,4 +16,7 @@ $.map(advantagesColors, (item) => {
 // Перебор данных colors для section-drops
 $.map(colors, (item) => {
     $('.colors-items').append(`<li class="color-item"><img class="color-item__image" src=${item.src} alt="${item.title}" /><h4 class="color-item__title">${item.title}</h4><p class="color-item__price">${item.price}</p></li>`)
+})
+$.map(roomColors, (item) => {
+    $('.description-images').append(`<a href="${item.href}" class="description-image"><img class="description-image__image" src="${item.room}" alt="${item.altRoom}" /><img class="description-image__hover" src="${item.color}" alt="${item.altColor}" /></a>`)
 })

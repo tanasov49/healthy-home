@@ -1,0 +1,8 @@
+.description-image {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    &:hover .description-image__hover {
+        opacity: 1;
+    }
+}

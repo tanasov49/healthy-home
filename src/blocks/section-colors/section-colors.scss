@@ -1,5 +1,15 @@
 .section-colors {
-    padding: 59px 56px 96px;
+    margin: 59px 56px 0;
+    padding: 0 0 96px 0;
     display: flex;
     flex-direction: column;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background: #E9E8E8;
+        bottom: 0;
+        width: 100%;
+    }
 }
