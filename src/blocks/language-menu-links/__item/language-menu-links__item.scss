@@ -1,0 +1,7 @@
+.language-menu-links__item {
+
+    a {
+        @include footer-info__link;
+        margin: 0;
+    }
+}

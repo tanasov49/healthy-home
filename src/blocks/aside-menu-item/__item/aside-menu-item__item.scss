@@ -1,0 +1,11 @@
+.aside-menu-item__item {
+    @include aside-menu-item__item;
+    color: #3C3C3C;
+    a {
+        text-decoration: none;
+        @include aside-menu-item__item;
+        &:hover {
+            color: #815151;
+        }
+    }
+}

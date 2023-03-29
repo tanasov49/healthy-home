@@ -1,0 +1,13 @@
+.aside-menu {
+    display: flex;
+    position: relative;
+    padding: 0 0 0 50px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 0;
+        background: #E9E8E8;
+    }
+}

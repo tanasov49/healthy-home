@@ -1,0 +1,11 @@
+.form-about-input__input {
+    padding: 5px 20px 5px 10px;
+    height: 37px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    @include form-about-input__input;
+    &:focus {
+        border: 1px solid #a76464;
+    }
+}

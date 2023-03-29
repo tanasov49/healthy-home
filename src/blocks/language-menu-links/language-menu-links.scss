@@ -1,0 +1,10 @@
+.language-menu-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 19px;
+    overflow: hidden;
+    transition: overflow 0.5s;
+}

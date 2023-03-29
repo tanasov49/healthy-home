@@ -15,3 +15,20 @@ export const advantagesColors = [
     {title: 'Easy to try on with our', subtitle: 'sample stickers', id: '03'},
     {title: 'Free shipping &', subtitle: 'returns in Europe', id: '04'}
 ]
+export const asideMenu = [
+    {titleMenu: 'Shop', linksTitleMenu: [
+        {link: 'Paints', href: '#'},
+        {link: 'Samples', href: '#'},
+        {link: 'Supplies', href: '#'}
+    ]},
+    {titleMenu: 'Discover', linksTitleMenu: [
+        {link: 'Gallery', href: '#'},
+        {link: 'Air purifying', href: '#'},
+        {link: 'Pro', href: '#'}
+    ]},
+    {titleMenu: 'About', linksTitleMenu: [
+        {link: 'About us', href: '#'},
+        {link: 'FAQ', href: '#'},
+        {link: 'Shipping & Returns', href: '#'}
+    ]},
+]

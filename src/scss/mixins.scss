@@ -140,3 +140,56 @@
         color: #3fdd4a;
     }
 }
+@mixin form-about__title {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1F1E1E;
+}
+@mixin form-about__subtitle {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+}
+@mixin form-about-input__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #3C3C3C;
+}
+@mixin form-about-input__error {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #c60c0c;
+}
+@mixin aside-menu-item__item {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #1F1E1E;
+}
+@mixin footer-info__text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+    text-transform: uppercase;
+    color: #1F1E1E;
+}
+@mixin footer-info__link {
+    font-size: 9px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #1F1E1E;
+    text-decoration: none;
+    transition: color 0.7s;
+    &:hover {
+        color: #dfc345;
+    }
+}
+@mixin language-menu-links__item {
+    
+}

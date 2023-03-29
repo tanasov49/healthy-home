@@ -25,6 +25,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^10.0.1",
     "jquery": "^3.6.4",
+    "jquery-validation": "^1.19.5",
     "jstransformer-markdown-it": "^3.0.0",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss-loader": "^7.0.2",

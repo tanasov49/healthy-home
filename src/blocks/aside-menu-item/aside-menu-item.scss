@@ -1,0 +1,12 @@
+.aside-menu-item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 74px;
+    & .aside-menu-item__item:first-child {
+        margin: 0 0 12px 0;
+    }
+    & .aside-menu-item__item:nth-child(n + 2) {
+        margin: 0 0 5px 0;
+    }
+}
