@@ -1,6 +1,9 @@
 .description-text__title_colors {
     @include description-text__title_colors;
     margin: 157px 0 0 0;
-    width: 414px;
+    max-width: 414px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        margin-top: 40px;
+    }
 }

@@ -3,4 +3,9 @@
     @include header__title;
     max-width: 410px;
     padding: 69px 0 0 42px;
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        text-align: center;
+        padding: 40px 40px 0;
+    }
 }

@@ -1,4 +1,8 @@
 .description__image {
     width: 546px;
     height: 546px;
+    @media screen and (max-width: 768px) {
+        width: 320px;
+        height: 320px;
+    } 
 }

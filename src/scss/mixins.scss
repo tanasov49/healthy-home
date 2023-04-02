@@ -8,6 +8,7 @@
     &:hover {
         color: #dfc345;
     }
+
 }
 // Анимация текста
 @mixin animateText {
@@ -27,6 +28,10 @@
     font-size: 63px;
     line-height: 66px;
     color: #FFFFFF;
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 32px;
+    }
 }
 @mixin btn-shop {
     font-weight: 400;
@@ -64,6 +69,10 @@
     font-size: 125px;
     line-height: 131px;
     color: #1F1E1E;
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 46px;
+    }
 }
 @mixin color-item__title {
     font-weight: 400;
@@ -91,24 +100,40 @@
     font-size: 38px;
     line-height: 46px;
     color: #1F1E1E;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 26px;
+    }
 }
 @mixin description-text__title_indoor {
     font-weight: 400;
     font-size: 52px;
     line-height: 58px;
     color: #425E44;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 26px;
+    }
 }
 @mixin description-text__title_sticker {
     font-weight: 400;
     font-size: 46px;
     line-height: 50px;
     color: #1F1E1E;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 26px;
+    }
 }
 @mixin description-text__title_colors {
     font-weight: 400;
     font-size: 52px;
     line-height: 58px;
-    color: #425E44
+    color: #425E44;
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 26px;
+    }
 }
 @mixin description-text__subtitle {
     font-size: 9px;
@@ -121,6 +146,10 @@
     font-size: 192px;
     line-height: 201px;
     color: #1F1E1E;
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 46px;
+    }
 }
 @mixin section-descriptions__subtitle {
     font-weight: 400;
@@ -128,6 +157,10 @@
     line-height: 29px;
     text-align: center;
     color: #1F1E1E;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 @mixin description-text__link {
     font-weight: 400;
@@ -145,6 +178,12 @@
     font-size: 38px;
     line-height: 46px;
     color: #1F1E1E;
+    @media screen and (max-width: 768px) {
+        font-size: 26px;
+        line-height: 28px;
+        text-align: center;
+    }
+
 }
 @mixin form-about__subtitle {
     font-weight: 400;
@@ -152,12 +191,16 @@
     line-height: 14px;
     text-transform: uppercase;
     color: #3C3C3C;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 @mixin form-about-input__input {
     font-weight: 400;
     font-size: 16px;
     line-height: 14px;
     color: #3C3C3C;
+    
 }
 @mixin form-about-input__error {
     font-weight: 400;
@@ -190,6 +233,9 @@
         color: #dfc345;
     }
 }
-@mixin language-menu-links__item {
-    
+@mixin popup-container__title {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1F1E1E;
 }

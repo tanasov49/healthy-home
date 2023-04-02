@@ -2,7 +2,6 @@ import './index.scss';
 import { linksNavPages, toolsNavPage, advantagesColors, asideMenu } from '../data/data';
 import { colors, roomColors } from '../data/colors';
 import $ from "jquery";
-import validate from "jquery-validation"
 // Перебор данных для nav
 $.map(linksNavPages, (item) => {
     $('.nav-pages').append( `<li class="page-item"><a class="page-item__link" href="${item.url}">${item.title}</a></li>` )
@@ -22,7 +21,11 @@ $.map(roomColors, (item) => {
     $('.description-images').append(`<a href="${item.href}" class="description-image"><img class="description-image__image" src="${item.room}" alt="${item.altRoom}" /><img class="description-image__hover" src="${item.color}" alt="${item.altColor}" /></a>`)
 })
 // Валидация формы
-$(document).ready(() => {
+const openPopup = (templateNode) => {
+    $('.popup').addClass('popup_open');
+    $('.popup-container').append(templateNode);
+}
+
     let validEmail = false;
     const btnSubmit = $('.form-about-input__button').prop('disabled', true)
     const validateEmail = () => {
@@ -49,17 +52,24 @@ $(document).ready(() => {
     $('.form-about-input__input').on('input', () => {
         validateEmail()
     })
+
     $('.form-about').on('submit', (e) => {
+        const templateEmail = $('.complete-form-email').html().trim();
+        console.log(templateEmail)
         if (validEmail === true) {
-            e.preventDefault()
+            e.preventDefault();
             const emailValue = $('.form-about-input__input');
-            console.log(emailValue.val())
+            console.log(emailValue.val());
             emailValue.val('');
+            openPopup(templateEmail);
+            setTimeout(() => {
+                $('.popup').removeClass('popup_open')
+            }, 3000);
         } else {
             return false
         }
     })
-})
+
 // Переоб массива для aside menu
 $.map(asideMenu, (item) => {
     let linksHtml = '';
@@ -76,11 +86,13 @@ $.map(asideMenu, (item) => {
 }
 )
 // Раскрытие меню языков
-$('.language-menu__button').on('click', (e) => {
+$('.language-menu__button').on('click', () => {
     $('.language-menu-links').toggleClass('language-menu-links_active');
     $('.language-menu__button').toggleClass('language-menu__button_active');
 })
-
-
-
+// Мобильное меню 
+$('.nav-pages-button').on('click', () => {
+    $('.nav-pages-button').toggleClass('nav-pages-button_active');
+    $('.nav-pages').toggleClass('nav-pages_active')
+})
 

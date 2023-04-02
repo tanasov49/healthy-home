@@ -1,0 +1,43 @@
+.nav-pages-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: none;
+    left: 30px;
+    top: 10px;
+    @media screen and (max-width: 768px) {
+        display: block;
+        z-index: 5;
+        cursor: pointer;
+        transition: all 0.7s;
+    }
+    span {
+        background: #fff;
+        display: block;
+        height: 5px;
+        position: relative;
+        top: 12px;
+        transition: .55s;
+        width: 100%;
+        &::before {
+            background: #fff;
+            content: "";
+            display: block;
+            height: 5px;
+            position: absolute;
+            transition: .55s;
+            width: 100%;
+            top: 12px;
+        }
+        &::after {
+            background: #fff;
+            content: "";
+            display: block;
+            height: 5px;
+            position: absolute;
+            transition: .55s;
+            width: 100%;
+            top: 24px;
+        }
+    }
+}

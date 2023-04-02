@@ -29,6 +29,7 @@
 @import '../blocks/section-colors/__text/section-colors__text';
 @import '../blocks/section-descriptions/section-descriptions';
 @import '../blocks/description/description';
+@import '../blocks/description/description_indoor';
 @import '../blocks/description/__image/description__image';
 @import '../blocks/description-text/description-text';
 @import '../blocks/description-text/description-text_indoor';
@@ -72,3 +73,10 @@
 @import '../blocks/language-menu-links/language-menu-links';
 @import '../blocks/language-menu-links/language-menu-links_active';
 @import '../blocks/language-menu-links/__item/language-menu-links__item';
+@import '../blocks/nav-pages-button/nav-pages-button';
+@import '../blocks/nav-pages-button/nav-pages-button_active';
+@import '../blocks/nav-pages/nav-pages_active';
+@import '../blocks/popup/popup';
+@import '../blocks/popup/popup_open';
+@import '../blocks/popup-container/popup-container';
+@import '../blocks/popup-container/__title/popup-container__title';

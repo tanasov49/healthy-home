@@ -10,4 +10,13 @@
         left: 0;
         background: #E9E8E8;
     }
+    @media screen and (max-width: 768px) {
+        padding: 0;
+        margin: 20px 0 0 0;
+        &::before {
+            width: 0;
+            height: 0;
+            background: none;
+        }
+    }
 }

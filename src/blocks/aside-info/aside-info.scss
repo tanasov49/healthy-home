@@ -12,4 +12,8 @@
         bottom: 0;
         background: #E9E8E8
     }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }

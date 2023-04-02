@@ -6,4 +6,10 @@
     left: 60px;
     opacity: 0;
     transition: opacity 0.7s;
+    @media screen and (max-width: 768px) {
+        width: 75px;
+        height: 75px;
+        top: 35px;
+        left: 40px;
+    }
 }

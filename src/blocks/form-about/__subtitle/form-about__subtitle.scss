@@ -1,4 +1,7 @@
 .form-about__subtitle {
     @include form-about__subtitle;
     margin: 35px 0 0 0;
+    @media screen and (max-width: 768px) {
+        margin: 10px 0 0 0;
+    }
 }

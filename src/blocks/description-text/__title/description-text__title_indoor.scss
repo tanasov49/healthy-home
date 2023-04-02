@@ -1,5 +1,8 @@
 .description-text__title_indoor {
     margin: 150px auto 0;
-    width: 439px;
+    max-width: 439px;
     @include description-text__title_indoor;
+    @media screen and (max-width: 768px) {
+        margin-top: 40px;
+    }
 }

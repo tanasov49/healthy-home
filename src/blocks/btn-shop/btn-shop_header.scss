@@ -1,4 +1,7 @@
 .btn-shop_header {
     width: 200px;
     margin: 36px 0 0 42px;
+    @media screen and (max-width: 768px) {
+        margin: 36px auto 0;
+    }
 }

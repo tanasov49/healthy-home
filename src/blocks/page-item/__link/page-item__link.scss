@@ -1,4 +1,8 @@
 .page-item__link {
     text-decoration: none;
     @include linkPage;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+        line-height: 26px; 
+    }
 }
